@@ -10,12 +10,12 @@
 	</parent>
 	<groupId>com.ogawalucas</groupId>
 	<artifactId>eureka-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>eureka-api</name>
 	<description>Eureka API</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2021.0.1</spring-cloud.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
