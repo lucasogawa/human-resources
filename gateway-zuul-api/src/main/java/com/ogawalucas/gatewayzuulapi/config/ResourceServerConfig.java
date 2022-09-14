@@ -13,9 +13,9 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-    private static final String[] PUBLIC = {"/hr-oauth/oauth/token"};
-    private static final String[] OPERATOR = {"/hr-worker/**"};
-    private static final String[] ADMIN = {"/hr-payroll/**", "/hr-user/**"};
+    private static final String[] PUBLIC = { "/oauth-api/oauth/token" };
+    private static final String[] OPERATOR = { "/worker-api/**" };
+    private static final String[] ADMIN = { "/payroll-api/**", "/user-api/**", "/actuator/**", "/worker-api/actuator/**", "/oauth-api/actuator/**" };
 
     @Autowired
     private JwtTokenStore tokenStore;
